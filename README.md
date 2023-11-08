@@ -1,27 +1,55 @@
-# React + TypeScript + Vite
+<h1 align='center'>
+    <img src='./src/assets/image.png'>
+    <p>A lista de tarefas que você precisava</p>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📕 Sobre
 
-Currently, two official plugins are available:
+**The List** foi desenvolvido para entender de forma prática como posso utilizar o typesScript com react. Escolhi desenvolver esse projeto simples pela gama de posibilidades que ele entrega na questão de utilização de recursos, como por exemplo: **Requisição de API**, **Hooks - nativos e custom**, **CRUD**, **Armazenamento em um banco de dados - mesmo que fake**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Recursos Utilizados
 
-## Expanding the ESLint configuration
+- React;
+- [Custom Hooks](https://www.w3schools.com/react/react_customhooks.asp);
+- Hooks (useState, useEffect [UseRef](https://www.w3schools.com/react/react_useref.asp));
+- react-icons;
+- TailwindCSS;
+- Axios;
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 👨🏾‍💻 Como rodar o projeto na sua máquina
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+# Com a sua chave SSH ativada, selecione a pasta onde você quer colocar esse projeto, abra o terminal nela e depois copie e cole o seguinte comando no seu terminal:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+$ git clone git@github.com:leofrs/lista-tarefas-react-typescript.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Após ter feito o clone, instale as dependências necessárias para rodar o projeto. Com a pasta do projeto aberta no terminal, execute os seguintes comandos um por vêz
+
+```bash
+# Se você utiliza npm
+$ npm i
+$ npm i react-icons
+$ npm i json-server --global
+```
+
+```bash
+# Se você utiliza yarn
+$ yarn i
+$ yarn add react-router-dom
+$ yarn add react-icons
+$ yarn json-server --global
+```
+
+Antes da inicialização do projeto, faça o procedimento as seguir: abra a pasta db no terminal e rode o seguinte comando:
+
+```bash
+# Esse comando faz com que o banco de dados fake seja iniciado na porta 3333 do seu pc e com isso você consegue ter acesso as funcinalidades de ler, criar, excluir e atualizar a The List.
+$ json-server --watch db.json --port 3333
+```
+
+obs: Como este projeto foi criado com o vite, execute o comando **npm run dev** para rodar em sua máquina.
+
+## 🧾 Licença
+
+Este Projeto utiliza a lincença MIT.
