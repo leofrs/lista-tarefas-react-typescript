@@ -8,16 +8,15 @@ export default function MainTodoApp() {
   const {
     tasks,
     modal,
-
     updateModal,
     createNewTask,
     setUpdateModal,
-    setUpdateTaskText,
     setUpdateTaskId,
     setId,
     setModal,
     removeTask,
     updateTask,
+    setNewTask,
     id,
     updateTaskId,
     inputRef,
@@ -45,7 +44,7 @@ export default function MainTodoApp() {
                   handleClickAtualizar={() => {
                     setUpdateModal(true);
                     setUpdateTaskId(Number(task.id));
-                    setUpdateTaskText(task.title);
+                    setNewTask(task.title);
                   }}
                 />
               </div>

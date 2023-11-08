@@ -17,7 +17,6 @@ const useCrud = () => {
   const [modal, setModal] = useState(false);
   const [updateModal, setUpdateModal] = useState(false);
   const [updateTaskId, setUpdateTaskId] = useState<number | null>(null);
-  const [updateTaskText, setUpdateTaskText] = useState(newTask);
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -68,7 +67,6 @@ const useCrud = () => {
     setUpdateModal,
     setId,
     setUpdateTaskId,
-    setUpdateTaskText,
     setNewTask,
     getAllTasks,
     createNewTask,
